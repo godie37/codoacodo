@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- con DIV (<div>) voy a separar cada parte del boceto para dividir e identificar cada parte para aplicar CSS-->
+
+        
+    <h1>Mi negocio</h1><!--Abreviaciones= h1>{Mi negocio}-->
+    <!--Abreviaciones= ol>li>{Destacado}-->
+    <ul>
+        <li>Destacado</li>
+    </ul>
+    
+
+    <form action="Link" method="post" target="_blank">
+        <level for="firstname">Nombre: </level>
+        <input size="30" type="text" name="firstname" id="firstname" maxlength="30"><br>
+        
+        <level for="secondname">Apellido: </level>
+        <input size="30" type="text" name="secondname" id="secondname"><br>
+        
+        <level for="mail">Mail: </level>
+        <input type="email" name="mail" id="mail" required placeholder="Ej. test@empresa.com"><br><!-- required: campo obligatorio!!!-->
+        
+        <level for="opcion">Chekbox </level><br>
+        &ensp;&ensp;&ensp;<input type="checkbox" name="opcion" id="opcion" value="1">Opcion 1<br>
+        &ensp;&ensp;&ensp;<input type="checkbox" name="opcion" id="opcion" value="2">Opcion 2<br>
+        &ensp;&ensp;&ensp;<input type="checkbox" name="opcion" id="opcion" value="3">Opcion 3<br><br>
+        <level for="opcionradio">Chekbox Radio </level><br>
+        &ensp;&ensp;&ensp;<input type="radio" name="opcionradio" id="opcionradio" value="1">Opcion 1<br>
+        &ensp;&ensp;&ensp;<input type="radio" name="opcionradio" id="opcionradio" value="2">Opcion 2<br>
+        <br>
+        <level for="pass">Contraseña: </level>
+        <input type="password" maxlength="15" name="pass">
+        <br><br>
+        <h3>BOTONES</h3>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="BORRAR">
+        <br><br>
+        <h3>FORMULARIO: fileset</h3>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <level for="firstname">Nombre:</level>
+            <input size="30" type="text" name="firstname" id="firstname" maxlength="30"><br>    
+            <level for="secondname">Apellido:</level>
+            <input size="30" type="text" name="secondname" id="secondname"><br>
+            <level for="cumple">Cumpleaños:</level>
+            <input type="date" name="cumple" id="cumple"><br>
+            <level for="mail">Mail: </level>
+            <input type="email" name="mail" id="mail"><br>
+            &ensp;<input type="submit" value="ENVIAR">
+            <input type="reset" value="BORRAR">
+        </fieldset>
+        <br><br>
+        <h3>FORMULARIO: textarea</h3>
+        Consulta: <br><textarea name="comentario" id="Consulta" cols="30" rows="10">Escribe aqui tu consulta.</textarea>
+        <br><br>
+        <h3>FORMULARIO: select y option </h3>
+        <p>Seleccione turno:</p>
+        <select name="turno" id="">
+            <option value="man">Mañana</option>
+            <option value="tar">Tarde</option>
+            <option value="noch">Noche</option>
+        </select>
+
+        <br><br><br><br>
+
+    </form>
+
+</body>
+</html>
+
+<!--
+Formularios: atributo type
+El atributo type de la etiqueta <input> valida el tipo de dato de entrada:
+● text: permite ingresar una cadena alfanumérica.
+● number: sólo permite seleccionar un número.
+● date: ofrece un calendario para cargar la fecha.
+● password: oculta el texto que se está ingresando en el campo.
+● email: valida que sea un mail.
+● url: valida que sea una url.
+● image: define una imagen como botón de envío.
+● tel: define un campo para ingresar un número de teléfono.
+● file: define un campo de selección de archivo.
+● button: activa código JavaScript cuando se hace clic en él.
+● checkbox: permite elegir varias opciones.
+● radio: permite elegir una opción entre varias posibles.
+● range: define un control de rango (como un control deslizante).
+● submit: botón enviar.
+
+-->
